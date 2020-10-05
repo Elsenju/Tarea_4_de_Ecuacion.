@@ -1,7 +1,8 @@
 #include "conio.h"
 #include "stdio.h"
 #include "math.h"
-main() //programa de ecuación del alumno Elias Xahuentitla Lima de 4A"
+main() //programa de ecuación ejercio 04
+del alumno Elias Xahuentitla Lima de 4A"
 {
        int a,b,c;
       float x1,x2,x3;
@@ -20,3 +21,215 @@ main() //programa de ecuación del alumno Elias Xahuentitla Lima de 4A"
        printf("\nla ecuacion es compleja");
       getch();
       }
+
+//Programa de calificaciones ejercicio 03 del alumno Elias Xahuentitla Lima//
+
+#include <stdio.h>
+
+main()
+{
+    char  final1, final2, final3;
+    float prom, nota1, nota2, nota3;
+    printf ("ingresa tus notas dadas del fin del curso.\n");
+    printf ("Teniendo en cuenta que cada letra tiene un valor.\n");
+    printf ("A=10.\n");
+    printf ("B=9.\n");
+    printf ("C=8.\n");
+    printf ("D=7.\n");
+    printf ("F=6.\n");
+    printf ("G=5.\n");
+    printf("Digita tus 3 calificaciones por favor:\n");
+
+    scanf("%c %c %c", &final1, &final2, &final3);
+
+    if (final1=='A')
+    {
+        nota1=10;
+
+    }
+    else if (final1=='B')
+    {
+        nota1=9;
+    }
+    else if (final1=='C')
+    {
+        nota1=8;
+    }
+    else if (final1=='D')
+    {
+        nota1=7;
+    }
+    else if (final1=='F')
+    {
+        nota1=6;
+    }
+    else if (final1=='G')
+    {
+        nota1=5;
+    }
+
+ else
+        {
+        printf ("Calificacion  reprobatoria.\n");
+    }
+
+    if (final2=='A')
+    {
+        nota2=10;
+
+    }
+    else if (final2=='B')
+    {
+        nota2=9;
+    }
+    else if (final2=='C')
+    {
+        nota2=8;
+    }
+    else if (final2=='D')
+    {
+        nota2=7;
+    }
+    else if (final2=='F')
+    {
+        nota2=6;
+    }
+    else if (final2=='G')
+    {
+        nota2=5;
+    }
+
+ else
+        {
+        printf ("Calificacion  reprobatoria\n");
+    }
+
+       if (final3=='A')
+    {
+        nota3=10;
+
+    }
+    else if (final3=='B')
+    {
+        nota3=9;
+    }
+    else if (final3=='C')
+    {
+        nota3=8;
+    }
+    else if (final3=='D')
+    {
+        nota3=7;
+    }
+    else if (final3=='F')
+    {
+        nota3=6;
+    }
+    else if (final3=='G')
+    {
+        nota3=5;
+    }
+ else
+    {
+        printf ("Calificacion reprobatoria %f \n", prom);
+    }
+    prom=(nota1+nota2+nota3)/3;
+    printf ("Tu promedio es de:%f\n", prom);
+if (prom<=6)
+    {
+        printf ("Calificacion reprobatoria\n");
+    }
+
+    return 0;
+}
+ 
+//Programa de las resistencias ejercio 2 del alumno Elias Xahuentitla Lima//
+#include <stdio.h>
+#include <stdlib.h>
+
+int main()
+{
+    float R1, R2, R3;
+float  Voltaje,RT,I1,I2,I3,IT;
+
+    printf("Digita el voltaje de tu circuito electrico;");
+    scanf("%f",&Voltaje);
+
+    printf("Digita el valor de R1,R2,R3 separadas por coma:");
+    scanf("%f,%f,%f",&R1,&R2,&R3);
+
+    RT=(1/R1)+(1/R2)+(1/R3);
+    printf("la resistencia total es: %3f", RT);
+    I1=Voltaje/R1;
+    printf("la corriente 1 es igual a: %3f ",I1);
+    I2=Voltaje/R2;
+    printf("la corriente 2 es igual a: %3f ",I2);
+    I3=Voltaje/R3;
+    printf("la corriente 3 es igual a: %3f" ,I3);
+    IT=I3+I2+I1;
+    RT=(1/R1)+(1/R2)+(1/R3);
+    printf("la corriente total del circuito electrico es: %3f  ",IT);
+    return 0;
+}
+
+//Ejercicio 01 de leds del alumno Elias Xahuentitla Lima//
+
+#include <stdio.h>
+#include <stdlib.h>
+
+int main()
+{
+    float Vin;
+    float LedAzulb;
+    float ResledAzul;
+    float VledAzul;
+    float IledAzul;
+    float VR;
+
+    float Ledverde;
+    float Resledverde;
+    float Volledverde;
+    float Iledverde;
+    float VolR1;
+
+     float Ledamarillostotal;
+    float Resledamarillostotal;
+    float Volledamarillostotal;
+    float Iledamarillostotal;
+    float VR2;
+
+
+    VledAzul= 5;
+    IledAzul= 0.19;
+        Volledverde= 4;
+    Iledverde= 0.02;
+
+    Volledamarillostotal= 4.32;
+    Iledamarillostotal= 0.045;
+
+    printf("ingresa el valor del voltaje");
+    scanf ("%f",&Vin);
+    printf("Voltaje de alimentacion= %f",Vin);
+
+    VR= Vin-VledAzul;
+    ResledAzul= VR/IledAzul;
+
+    printf("Resistencia para el Led azul brillante= %f",ResledAzul);
+
+    printf("Voltaje de alimentacion= %lf",Vin);
+    VolR1= Vin-Volledverde;
+    Resledverde= VolR1/Iledverde;
+
+    printf("Resistencia para el Led verde brillante= %lf",Resledverde);
+
+    printf("Voltaje de alimentacion= %lf",Vin);
+    VR2= Vin-Volledamarillostotal;
+    Resledamarillostotal= VR2/Iledamarillostotal;
+
+
+
+    printf("Resistencia para el Led amarillostd= %f",Resledamarillostotal);
+
+
+    return 0;
+}
