@@ -2,7 +2,7 @@
 #include "stdio.h"
 #include "math.h"
 main() //programa de ecuación ejercio 04
-del alumno Elias Xahuentitla Lima de 4A"
+del alumno Elias Xahuentitla Lima de 4A"//
 {
        int a,b,c;
       float x1,x2,x3;
@@ -22,7 +22,8 @@ del alumno Elias Xahuentitla Lima de 4A"
       getch();
       }
 
-//Programa de calificaciones ejercicio 03 del alumno Elias Xahuentitla Lima//
+//Programa de calificaciones ejercicio 03 del alumno Elias Xahuentitla
+ Lima//
 
 #include <stdio.h>
 
