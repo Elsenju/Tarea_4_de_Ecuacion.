@@ -1,7 +1,7 @@
 #include "conio.h"
 #include "stdio.h"
 #include "math.h"
-main()
+main() //programa de ecuación del alumno Elias Xahuentitla Lima de 4A"
 {
        int a,b,c;
       float x1,x2,x3;
